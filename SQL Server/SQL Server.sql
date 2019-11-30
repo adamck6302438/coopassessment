@@ -15,5 +15,10 @@ primary key(id)
 -- 3. Insert product data to Product table
 INSERT INTO Product(product_name, price, description)
 VALUES ('Dog Shampoo', 10.57, 'shampoo for long hair dogs'), 
-	   ('WD Red 4 TB', 150.99, 'NAS hard drive'), 
-	   ('2018 Nissan Mourano', 37866.99, 'Nissan Mourano AWD with Tech Package?');
+	('WD Red 4 TB', 150.99, 'NAS hard drive'), 
+	('2018 Nissan Mourano', 37866.99, 'Nissan Mourano AWD with Tech Package?');
+
+-- 4. Create a copy of Product table called 'Product_Copy'
+CREATE TABLE Product_Copy
+SELECT * FROM Product;
+
