@@ -22,3 +22,5 @@ VALUES ('Dog Shampoo', 10.57, 'shampoo for long hair dogs'),
 CREATE TABLE Product_Copy
 SELECT * FROM Product;
 
+-- 5. Delete 2nd row of Product_Copy table
+DELETE FROM Product_Copy WHERE id = 2;
