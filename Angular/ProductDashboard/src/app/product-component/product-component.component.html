@@ -1,1 +1,20 @@
 <p>product-component works!</p>
+<button onclick="add-product-component/add-product-component.component.html">Add a new Product</button>
+<table>
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Price</td>
+        <td>Description</td>
+    </tr>
+    <!-- Step 5 thinking process
+        5-1. Get products from ProductService.getAll() and populate the table using the retrived product[]
+        5-2. Add a table row that contains a text input and a button. When user submit an id, call ProductService.get(id)
+            and check if result is null. If found an item, re-populate the table with 1 row of found data.
+        5-3. Refactor the generate table function to have an extra column that contains a delete button in each row. When
+            user press the delete button, call ProductService.deleteProduct(id)
+        5-4. When user press "Add a new Product" button located above the table, user will be redirected to "add-product-component.html"
+            with a form presented on the page. Once user fill in all required fields and hit submit, the form should call 
+            ProductService.addProduct(product) and redirect user back to this page
+    -->
+</table>
