@@ -18,7 +18,7 @@ export class MyInterceptor implements HttpInterceptor {
         request: HttpRequest<any>,
         next: HttpHandler
       ): Observable<HttpEvent<any>> {
-        //how to update the request Parameters
+        
         const updatedRequest = request.clone({
           headers: new HttpHeaders().append('httpInterceptor', 'DummyInterceptor')
         });
